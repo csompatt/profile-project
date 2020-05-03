@@ -1,0 +1,183 @@
+body{
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+  background-image: url("assets/background.svg");
+  background-position: cover;
+}
+
+#profile{
+  width: 100%;
+  display: block;
+}
+
+/* ----First-Part - Header ---- */
+
+#info-picture{ 
+  display: flex;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+
+.info-contact{
+  color: white;
+}
+
+.coding-lang{
+  font-size: .6rem;
+  text-align: right;
+  padding-top: 2%;
+}
+
+.contact, .info{
+  height: 50%;
+  text-align: center;
+}
+
+.contact{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-position{
+  position: absolute;
+  bottom: 0;
+}
+
+.name{
+  padding-top: 10%;
+}
+
+img{
+  border: 7px solid purple;
+  border-image-source: linear-gradient(aqua, purple);
+  border-image-slice: 20;
+}
+
+/* ----Third Part - Bio ---- */
+
+#bio{
+  background: rgba(255,255,255, 0.8);
+  display: flex;
+  padding: 5% 2% 5% 2%;
+}
+
+.about-head, .goals-head, .hobby-head{
+  display: flex;
+  align-items: center;
+  padding-bottom: 3%;
+}
+
+.goals, .hobby, .about{
+  padding: 0 1% 0 1%;
+  height: 100%;
+}
+
+.about{
+  border-right: 3px dotted black;
+}
+.hobby{
+  border-left: 3px dotted black;
+}
+
+.fas{
+  font-size: 1.2rem;
+  margin-right: .5rem;
+}
+
+/* ----Fourth Part - Skills---- */
+
+#skills{
+  color: white;
+  padding-top: 2%;
+}
+
+.h1skills{
+  padding-left: 2%;
+  font-size: 2rem;
+}
+
+.myskills{
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  line-height: 2rem;
+}
+
+.html, .css, .javascript{
+  margin: 3% 5% 3% 5%;
+  padding: 1%;
+  text-align: center;
+  color: white;
+  transition: 0.3s;
+}
+
+.fa-stack{
+  font-size: 2rem;
+}
+
+/*Skills Hover Effect*/
+
+.html:hover, .css:hover, .javascript:hover{
+  outline: none;
+  border-color: whitesmoke;
+  box-shadow: 0 0 10px whitesmoke;
+  background-color: whitesmoke;
+  color: black;
+  border-radius: 5%;
+  transform: scale(1.1);
+}
+
+/*Language Selector*/
+
+
+.lang{
+  padding: 0 0 2% 2%;
+}
+
+ul{
+  display: inline-flex;
+  list-style-type: none;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+
+/*Mobile First display*/
+
+@media (max-width: 420px){ 
+  img{
+    width: 8rem;
+    height: 8rem;
+  }
+  
+  #bio{
+    display: block;
+  }
+  
+  .info-contact{
+    padding-right: 3%;
+  }
+  
+  .goals, .hobby, .about{
+  padding: 3% 0 3% 0;
+  border: none;
+  height: 100%;
+  }
+
+  .about{
+    border-bottom: 3px dotted black;
+  }
+  .hobby{
+    border-top: 3px dotted black;
+  }
+}
+
+
+
