@@ -11,6 +11,9 @@ body{
   display: block;
 }
 
+.info-contact, .myskills{
+  font-family: 'Raleway', sans-serif;
+}
 /* ----First-Part - Header ---- */
 
 #info-picture{ 
@@ -47,14 +50,23 @@ body{
   bottom: 0;
 }
 
-.name{
+h1{
   padding-top: 10%;
+}
+
+h1, h4{
+  font-family: 'Alfa Slab One', cursive;
+  letter-spacing: 2px;
 }
 
 img{
   border: 7px solid purple;
   border-image-source: linear-gradient(aqua, purple);
   border-image-slice: 20;
+}
+
+.name{
+  padding-bottom: 2%;
 }
 
 /* ----Third Part - Bio ---- */
@@ -74,19 +86,25 @@ img{
 .goals, .hobby, .about{
   padding: 0 1% 0 1%;
   height: 100%;
+  font-family: 'Lora', serif;
 }
 
-.about{
-  border-right: 3px dotted black;
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
 }
-.hobby{
+
+.goals{
+  border-right: 3px dotted black;
   border-left: 3px dotted black;
 }
+
 
 .fas{
   font-size: 1.2rem;
   margin-right: .5rem;
 }
+
 
 /* ----Fourth Part - Skills---- */
 
@@ -95,9 +113,8 @@ img{
   padding-top: 2%;
 }
 
-.h1skills{
+h4{
   padding-left: 2%;
-  font-size: 2rem;
 }
 
 .myskills{
@@ -168,19 +185,40 @@ a{
   }
   
   .goals, .hobby, .about{
-  padding: 3% 0 3% 0;
-  border: none;
-  height: 100%;
+    padding: 3% 0 3% 0;
+    border: none;
+    height: 100%;
+    line-height: 1.2rem;
+    letter-spacing: 0.02rem;
   }
 
   .about{
     border-bottom: 3px dotted black;
   }
+  
   .hobby{
     border-top: 3px dotted black;
   }
+  
+  h1, h4{
+  font-size: 1.5rem;
+  }
+  
+  .info{
+    font-size: .8rem;
+  }
+  .coding-lang{
+    font-size: .5rem;
+  }
+  .contact-position{
+    font-size: 1.5rem;
+    padding: 2% 5% 0 5%;
+  }
+  h2{
+    font-size: 1rem;
+    padding-bottom: 2%;
+  }
 }
-
 
 /*Tablets and Mobile Landscape Display*/
 
@@ -193,9 +231,10 @@ a{
 .info-contact{
     padding-left: 20%;
   }
-  .name{
+  h1{
     padding-top: 30%;
   }
+
 }
 
 /*Desktop and Tablet Display*/
@@ -209,7 +248,7 @@ a{
     padding-left: 25%;
   }
   
-  .name{
+  h1{
     padding-top: 50%;
   }
 }
